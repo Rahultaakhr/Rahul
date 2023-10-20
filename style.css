@@ -58,12 +58,17 @@ font-family: 'Tilt Neon', sans-serif;
   border-radius: 10px;
   color: black;
 }
+.resources{
+  background-color: #E61089;
+  background-attachment: fixed;
+}
 #logo{display: inline-block;
 position: absolute;
-top: 20px;
-  margin-left: 10px;
-  width: 55px;
-  height: 50px;
+top: 12px;
+  margin-left: 6px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #E610D1;
   border-radius: 50%;
 }
 section .well{
@@ -81,7 +86,7 @@ font-family: 'Gabarito', sans-serif;
 }
 .thumbnail{
   margin: 5px;
-  width: 95%;
+  width: 98%;
 }
 .resources p{
   margin: 10px;
@@ -90,4 +95,66 @@ font-family: 'Gabarito', sans-serif;
 
 p a{
   color: #6500F5;
+}
+@media only screen and (min-width:380px) {
+  header {
+    background-color: #0D78E6;
+    height: 100px;
+  }
+  nav{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+nav ul{
+  display: flex;
+}
+nav a{
+  display: flex;
+  margin-top: 20px;
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+
+  
+}
+nav a:hover {
+  background-color: ghostwhite;
+  border-radius: 20px;
+}
+
+.account{
+display:flex;
+flex-direction:row;
+  border: 2px solid black;
+  border-radius: 15px;
+  position: absolute;
+  right: 10px;
+ top: 20px;
+ background-color: #0DA0E6;
+}
+.account a{
+  font-family: 'Gabarito', sans-serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Pixelify Sans', sans-serif;
+font-family: 'Tilt Neon', sans-serif;
+  color: ghostwhite;
+  text-decoration: underline;
+ padding: 15px;
+}
+.account a:hover{
+  background-color: whitesmoke;
+  border-radius: 10px;
+  color: black;
+}
+#logo{display: inline-block;
+position: absolute;
+top: 10px;
+  margin-left: 10px;
+  width: 100px;
+  height: 80px;
+  border: 2px solid #E610D1;
+  border-radius: 20%;
+}
+
 }
