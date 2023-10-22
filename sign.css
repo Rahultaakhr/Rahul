@@ -1,0 +1,91 @@
+*{
+  box-sizing: border-box;
+  }
+  body{
+    background-image: url('dragon.gif');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding:0;
+  }
+  .Sign{
+   
+    font-size: 25px;
+    text-align: center;
+      display:flex;
+      flex-direction: column;
+      width: 60%;
+      height: 550px;
+      border-radius: 20px;
+      backdrop-filter: blur(20px);
+      top: 400px;
+      left: 200px;
+      
+      position: absolute;
+    border: 3px solid black;
+  }
+  h1{
+font-family: 'Playpen Sans', cursive;
+text-decoration: underline;
+  }
+  input{
+    font-size: 20px;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  input[type=submit]{
+    border-radius: 10px;
+    width: 30%;
+    padding: 7px 8px;
+    font-size: 20px;
+    background-color: #4535EB8F;
+  }
+  input[type=submit]:hover{
+    background-color: #0E75EA8F;
+    color: whitesmoke;
+    border-radius: 30px;
+  }
+@media only screen and (max-width: 600px) {
+  body{
+    background-image: url('dragon.gif');
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
+  }
+  .Sign{
+    display: flex;
+    position: absolute;
+    left: 35px;
+    padding: 0 10px;
+    height: 450px;
+    top: 80px;
+    width: 80%;
+    border: 3px solid black;
+  }
+  input{
+    margin: auto;
+   
+    padding: 5px;
+    width: 90%;
+  }
+  input[type=submit]
+  {
+    width: 35%;
+    color: white;
+    animation: sign;
+    animation-delay: 2s;
+    padding: 5px 8px;
+  }
+  
+  @keyframes sign{
+      from {width: 0;  }
+      to {width: 35%;
+      background-color: #3FF3D0;
+      }
+  }
+
+}
